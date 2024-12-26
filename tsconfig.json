@@ -23,6 +23,12 @@
       "@core": ["./src/core"],
       "@core/*": ["./src/core/*"],
 
+      "@domain": ["./src/domain"],
+      "@domain/*": ["./src/domain/*"],
+
+      "@presentation": ["./src/presentation"],
+      "@presentation/*": ["./src/presentation/*"],
+
       "@shared": ["./src/shared"],
       "@shared/*": ["./src/shared/*"],
     },

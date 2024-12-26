@@ -109,6 +109,8 @@ export default [
             'module',
             '/^@src/',
             '/^@core/',
+            '/^@domain/',
+            '/^@presentation/',
             '/^@shared/',
           ],
           alphabetize: {
