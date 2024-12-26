@@ -12,6 +12,8 @@
     "yarn": ">=1.22.0"
   },
   "scripts": {
+    "start": "tsx src/index.ts",
+    "start:watch": "tsx watch src/index.ts",
     "lint": "eslint",
     "lint:fix": "eslint --fix"
   },
@@ -24,6 +26,7 @@
     "@fastify/swagger": "^9.4.0",
     "@fastify/swagger-ui": "^5.2.0",
     "fastify": "^5.2.0",
+    "fastify-plugin": "^5.0.1",
     "module-alias": "^2.2.3",
     "typeorm": "^0.3.20",
     "zod": "^3.24.1"
@@ -37,6 +40,7 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-import-helpers": "^2.0.1",
+    "eslint-plugin-prettier": "^5.2.1",
     "qs": "^6.13.1",
     "tsx": "^4.19.2",
     "typescript": "^5.7.2"

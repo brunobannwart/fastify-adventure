@@ -1,9 +1,13 @@
+import TypescriptParser from '@typescript-eslint/parser';
 import ImportPlugin from 'eslint-plugin-import';
 import ImportHelpersPlugin from 'eslint-plugin-import-helpers';
 
 export default [
   {
     files: [ '**/*.js', '**/*.cjs', '**/*.mjs', '**/*.ts' ],
+    languageOptions: {
+      parser: TypescriptParser,
+    },
     plugins: {
       'eslint-plugin-import-helpers': ImportHelpersPlugin,
       'eslint-plugin-import': ImportPlugin,
@@ -105,10 +109,7 @@ export default [
             'module',
             '/^@src/',
             '/^@core/',
-            '/^@jobs/',
-            '/^@modules/',
             '/^@shared/',
-            '/^@tests/',
           ],
           alphabetize: {
             order: 'asc',
