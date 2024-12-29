@@ -1,8 +1,11 @@
+import dotenv from 'dotenv';
 import { Settings } from 'luxon';
 
 import { logError, logInit } from '@shared/logging/local';
 import { IConstants, IEnvironmentSecrets } from '@shared/types';
 import ConstantsSchema, { ConstantsSchemaType } from '@shared/validations/constants';
+
+dotenv.config();
 
 const Constants: IConstants = {} as IConstants;
 
