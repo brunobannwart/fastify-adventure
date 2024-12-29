@@ -1,4 +1,4 @@
-export interface IDictionary<T> {
+export interface IDictionary<T = string | number | boolean> {
   [key: string]: T | undefined | null;
 }
 
@@ -21,9 +21,9 @@ export interface IRequestError {
   domain?: string;
   url?: string;
   method?: string;
-  headers?: Record<string, unknown>;
-  data?: Record<string, unknown>;
-  response?: Record<string, unknown>;
+  headers?: IDictionary;
+  data?: IDictionary;
+  response?: IDictionary;
   timeout?: boolean;
   message?: string;
   code?: string;
