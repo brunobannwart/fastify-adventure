@@ -40,6 +40,30 @@ function setConstants () {
     timezone: secrets.APPLICATION_TIMEZONE,
   };
 
+  Constants.database = {
+    host: secrets.DATABASE_HOST,
+    port: Number(secrets.DATABASE_PORT),
+    name: secrets.DATABASE_NAME,
+    username: secrets.DATABASE_USERNAME,
+    password: secrets.DATABASE_PASSWORD,
+    certificate: secrets.DATABASE_CERTIFICATE,
+
+    pool: {
+      min: Number(secrets.DATABASE_POOL_MIN),
+      max: Number(secrets.DATABASE_POOL_MAX),
+    },
+  };
+
+  Constants.aws = {
+    accessKey: secrets.AWS_ACCESS_KEY,
+    secretKey: secrets.AWS_SECRET_KEY,
+
+    cloudwatch: {
+      region: secrets.AWS_CLOUDWATCH_REGION,
+      group: secrets.AWS_CLOUDWATCH_GROUP,
+    },
+  };
+
   return Constants;
 }
 
